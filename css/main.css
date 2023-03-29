@@ -1,0 +1,631 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+	font-size: 14px;
+	color: #000;
+	background-color: #ff3838;
+}
+
+a {
+	text-decoration: none;
+}
+
+#container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+    background-color: #ffffff;
+}
+
+.quatro-can-1 {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+/* 1. --- Header --- */
+
+
+li, a {
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+    background-color: rgb(0, 0, 0)
+  }
+  
+  #Logo {
+    cursor: pointer;
+    height: 40px;
+    transition: all 0.2s ease;
+  }
+
+  #Logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav {
+    list-style: none;
+    font-weight: light;
+    color: #fff;
+  }
+  
+  .nav li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  .nav li a {
+    transition: all 0.3s ease;
+  }
+  
+  .nav li a:hover {
+    transform: scale(1.2);
+    color: rgb(90, 90, 90);
+  }
+  
+  button {
+    padding: 9px 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+  }
+
+
+/* 2. --- card section --- */
+
+.cards {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#about-img, #contact-img{
+    width: 50%;
+    height: auto;
+    padding: 20px 110px 40px 110px;
+    transition: all ease .3s;
+}
+
+#about-img:hover, #contact-img:hover {
+    transform: scale(1.2);
+}
+
+.cards section {
+    margin: 50px auto;
+    width: 420px;
+    background-color: #333;
+}
+
+.cards h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-bottom: 35px;
+}
+
+.cards p {
+    color: #ffffff;
+    line-height: 1.4;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.link {
+    display: block;
+    width: 120px;
+    text-align: center;
+    padding: 12px 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    margin: 40px auto 15px;
+    margin-bottom: 40px;
+}
+
+.link:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 2px #000000);}
+
+
+
+/* 3. --- Video --- */
+
+.video-con {
+    padding: 80px;
+    background-color: #333;
+}
+
+#video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    border: 4px solid black;
+}
+
+
+
+/* --- 4. Images sec. --- */
+
+.com1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 50px auto 50px 0;
+}
+
+.page1-img1 {
+    display: block;
+    width: 575px;
+    height: 325px;
+    margin: 50px 22px 22px 0px;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img2 {
+    width: 375px;
+    height: 325px;
+    margin: 50px 0px 0px 22px;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img2:hover {
+    border: 7px solid #000000;
+    border-left: 30px solid #000;
+
+}
+
+.page1-img1:hover {
+    border: 7px solid #000000;
+    border-right: 30px solid #000;
+
+}
+.com1-text {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.com1-text h3 {
+    align-items: center;
+    text-align: center;
+    margin: 22px 0px 19px 22px;
+    letter-spacing: -1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;	
+}
+
+.com1-text p {
+    position: relative;
+    text-align: center;
+    width: 550px;
+    margin: 20px auto;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #000000;
+}
+
+.morebtn1 {
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding: 12px 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    margin: 20px auto 15px;
+    /* display: block;
+    width: 150px;
+    color: #989898;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 40px auto;
+    margin-bottom: 40px;
+    border: 2px solid #000000;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    transition: all .2s ease-in-out; */
+}
+
+.morebtn1:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+}
+
+
+/* commercial #2 */
+
+.com2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.page1-img4 {
+    display: block;
+    width: 575px;
+    height: 325px;
+    margin: 50px 0 0 50px;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img3 {
+    width: 375px;
+    height: 325px;
+    margin: 50px auto;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img4:hover {
+    border: 7px solid #000000;
+    border-left: 30px solid #000;
+
+}
+
+.page1-img3:hover {
+    border: 7px solid #000000;
+    border-right: 30px solid #000;
+
+}
+
+.com2-text {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.com2-text h3 {
+    align-items: center;
+    text-align: center;
+    margin: 22px 0px 19px 22px;
+    letter-spacing: -1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;	
+}
+
+.com2-text p {
+    position: relative;
+    text-align: center;
+    width: 550px;
+    margin: 20px auto;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #000000;
+}
+
+.morebtn2 {
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding: 12px 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    margin: 20px auto 50px;
+    /* display: block;
+    width: 150px;
+    color: #989898;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 40px auto;
+    border: 2px solid #000000;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 100px; */
+}
+
+.morebtn2:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+}
+
+
+/*  5.  Banner */
+
+.page1-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto 40px 0;
+    border-top: #000 solid 2px;
+    border-bottom: #000 solid 2px;
+    background-color: #333;
+}
+
+.page1-banner h3 {
+    padding: 50px 0 50px 0;
+
+    color: white;
+}
+
+.page1-banner h4 {
+    padding: 40px 0 50px 0;
+    margin-left: 10px;
+    color: white;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.page1-banner h4:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*  6. footer  */
+
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#footerLogo {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 270px;
+    padding: 45px 10px 10px 10px;
+    transition: all .15s ease-in-out;
+}
+
+
+#footerLogo:hover {
+    -webkit-transform: scale(1.03, 1.03);
+    -moz-transform: scale(1.03, 1.03);
+    cursor: pointer;
+}
+
+footer h3 {
+    text-align: justify;
+    font-size: 32px;
+    padding-bottom: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+#footer p {
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight:lighter;
+    color: #fff;
+}
+
+#social {
+    position: relative;
+    margin: 84px auto 100px auto;
+    left: 11%;
+}
+
+
+#social ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+#facebook {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 15px 26px 15px 26px;
+    display: inline;
+    transition: all .2s ease-in-out;
+}
+
+#instagram {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 15px 30px 15px 30px;
+    display: inline;
+    transition: all .2s ease-in-out;
+}
+
+#twitter {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 14px 25px 14px 25px;
+    display: inline;
+    transition: all .2s ease-in-out;
+}
+
+#twitter:hover {
+    background-color: #02528378;
+    color: #000;
+}
+
+#facebook:hover {
+    background-color: #3b58987b;
+    color: #000;
+}
+
+#instagram:hover {
+    background-color: #ff34a084;
+    color: #000;
+}
+
+/*  footer form   */
+
+#contact-form {
+    margin-top: 60px;
+}
+
+#contact-form ul {
+    list-style: none;
+}
+
+#contact-form h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 35px 0 40px 0;
+    color: #fff;
+}
+
+textarea {
+	resize: none;
+}
+
+#fname {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#email {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#order{
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+    height: 50px;
+}
+#fname:hover {
+	border: 2px solid #999999;
+}
+
+#email:hover {
+	border: 2px solid #999999;
+}
+
+#order:hover {
+	border: 2px solid #999999;
+}
+
+#submitBtn {
+    display: block;
+    padding: 9px 20px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    margin: 20px auto 50px;
+}
+
+#submitBtn:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+}
+
+
+/* copyright banner */
+
+
+#copyright {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    #main-logo {
+        order: -1;
+    }
+    
+}
