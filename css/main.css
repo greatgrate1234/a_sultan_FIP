@@ -58,7 +58,7 @@ li, a {
   
   .nav {
     list-style: none;
-    font-weight: light;
+    font-weight: lighter;
     color: #fff;
   }
   
@@ -91,6 +91,7 @@ li, a {
   button:hover {
     background-color: rgb(49, 49, 49);
     transform: scale(1.1);
+    color: #fff;
   }
 
 
@@ -247,7 +248,7 @@ video {
     color: #000000;
 }
 
-.morebtn1 {
+.morebtn1, .morebtn2 {
     display: block;
     width: 80px;
     text-align: center;
@@ -275,9 +276,13 @@ video {
     transition: all .2s ease-in-out; */
 }
 
-.morebtn1:hover {
+.morebtn2 {
+    margin: 20px auto 40px;
+}
+.morebtn1:hover, .morebtn2:hover {
     background-color: rgb(49, 49, 49);
     transform: scale(1.1);
+    filter: drop-shadow(2px 2px 2px #000000);
 }
 
 
@@ -346,38 +351,7 @@ video {
     color: #000000;
 }
 
-.morebtn2 {
-    display: block;
-    width: 80px;
-    text-align: center;
-    padding: 12px 20px;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Kanit', sans-serif;
-    font-size: 15px;
-    margin: 20px auto 50px;
-    /* display: block;
-    width: 150px;
-    color: #989898;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin: 40px auto;
-    border: 2px solid #000000;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    transition: all .2s ease-in-out;
-    margin-bottom: 100px; */
-}
 
-.morebtn2:hover {
-    background-color: rgb(49, 49, 49);
-    transform: scale(1.1);
-}
 
 
 /*  5.  Banner */
@@ -396,22 +370,25 @@ video {
 
 .page1-banner h3 {
     padding: 50px 0 50px 0;
-
+    letter-spacing: 10px;
+    word-spacing: 10px;
     color: white;
 }
 
 .page1-banner h4 {
-    padding: 40px 0 50px 0;
+    padding: 40px 0 50px 10px;
     margin-left: 10px;
+    letter-spacing: 6px;
+
     color: white;
     font-size: 30px;
     transition: all .2s ease-in-out;
 }
 
 .page1-banner h4:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
+    transform: scale(1.3);
     margin-left: 20px;
+    font-weight: bolder;
 }
 
 
@@ -458,7 +435,7 @@ footer h3 {
 }
 
 #footer p {
-    text-align: justify;
+    text-align: center;
     line-height: 1.8;
     letter-spacing: 1px;
     font-size: 18px;
@@ -469,7 +446,7 @@ footer h3 {
 #social {
     position: relative;
     margin: 84px auto 100px auto;
-    left: 11%;
+    left: 18%;
 }
 
 
@@ -482,10 +459,10 @@ footer h3 {
 #facebook {
     display: block;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 100px;
-    padding: 15px 26px 15px 26px;
+    padding: 8px 18px 8px 18px;
     display: inline;
     transition: all .2s ease-in-out;
 }
@@ -493,10 +470,10 @@ footer h3 {
 #instagram {
     display: block;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 100px;
-    padding: 15px 30px 15px 30px;
+    padding: 8px 21px 8px 21px;
     display: inline;
     transition: all .2s ease-in-out;
 }
@@ -504,21 +481,21 @@ footer h3 {
 #twitter {
     display: block;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 100px;
-    padding: 14px 25px 14px 25px;
+    padding: 8px 18px 8px 18px;
     display: inline;
     transition: all .2s ease-in-out;
 }
 
 #twitter:hover {
-    background-color: #02528378;
+    background-color: #05bff3a1;
     color: #000;
 }
 
 #facebook:hover {
-    background-color: #3b58987b;
+    background-color: #0048e47b;
     color: #000;
 }
 
@@ -613,6 +590,144 @@ textarea {
     padding: 10px 0 10px 0;
     font-size: 14px;
     font-weight: lighter;
+}
+
+#copyright h2 {
+    text-align: center
+}
+
+/* PAGE 2 */
+
+/* 1. --- contact --- */
+
+.contactCon {
+    background-image: url(../images/Quatro-logo.svg);
+    
+}
+
+#googleMap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    width: 600px;
+    height: auto;
+    border: 5px solid #000000;
+    
+}
+
+.mapCon h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    margin-top: 55px;
+}
+
+
+.mapCon p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 180px 0 180px;
+    font-weight: lighter;
+    font-size: 24px;
+    margin-top: 35px;
+    
+} 
+#contactPage {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contactPage h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+#contactUs {
+    display: flex;
+    justify-content: center;
+}
+
+#contactUs ul {
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#fullN {
+    
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#e-mail {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#phoneN {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#messageC {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+    height: 50px;
+}
+
+#fullN:hover {
+	border: 2px solid #999999;
+}
+#e-mail:hover {
+	border: 2px solid #999999;
+}
+
+#phoneN:hover {
+	border: 2px solid #999999;
+}
+
+#messageC:hover {
+	border: 2px solid #999999;
+}
+
+#submitBtnC {
+    display: block;
+    padding: 9px 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    margin: 20px auto 50px;
+}
+
+#submitBtnC:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.1);
+
 }
 
 
