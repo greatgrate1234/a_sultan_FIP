@@ -42,8 +42,10 @@ li, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky; top: 0;
     padding: 18px 10%;
-    background-color: rgb(0, 0, 0)
+    background-color: rgb(0, 0, 0);
+    z-index: 200;
   }
   
   #Logo {
@@ -95,6 +97,12 @@ li, a {
   }
 
 
+
+  .quatro-can-1 {
+    margin-bottom: 40px;
+  }
+
+
 /* 2. --- card section --- */
 
 .cards {
@@ -103,7 +111,7 @@ li, a {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 
 #about-img, #contact-img{
@@ -167,7 +175,7 @@ li, a {
 
 /* 3. --- Video --- */
 
-.video-con {
+.videoCon {
     padding: 80px;
     background-color: #333;
 }
@@ -238,14 +246,15 @@ video {
     color: #000000;	
 }
 
-.com1-text p {
+.com1-text p, .com2-text p {
     position: relative;
     text-align: center;
     width: 550px;
-    margin: 20px auto;
+    margin: 30px auto;
     line-height: 1.2;
     font-size: 20px;
     color: #000000;
+    font-weight: lighter;
 }
 
 .morebtn1, .morebtn2 {
@@ -341,15 +350,7 @@ video {
     color: #000000;	
 }
 
-.com2-text p {
-    position: relative;
-    text-align: center;
-    width: 550px;
-    margin: 20px auto;
-    line-height: 1.2;
-    font-size: 20px;
-    color: #000000;
-}
+
 
 
 
@@ -362,14 +363,12 @@ video {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 40px auto 40px 0;
-    border-top: #000 solid 2px;
-    border-bottom: #000 solid 2px;
+    margin: 50px auto 50px 0;
     background-color: #333;
 }
 
 .page1-banner h3 {
-    padding: 50px 0 50px 0;
+    padding: 80px 0 80px 0;
     letter-spacing: 10px;
     word-spacing: 10px;
     color: white;
@@ -596,7 +595,7 @@ textarea {
     text-align: center
 }
 
-/* PAGE 2 */
+/* Contact PAGE 2 */
 
 /* 1. --- contact --- */
 
@@ -733,10 +732,51 @@ textarea {
 
 
 
+/* --- About PAGE 3 --- */
 
+/* 1. --- Hero --- */
 
+#heroCon {
+    margin-bottom: 70px;
+}
 
+#heroCon-abt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 4.125rem;
+}
+  
+.aboutText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 70px;
+}
 
+.aboutText h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#aboutCon {
+    margin: 30px 0 0 0 ;
+    text-align: center;
+}
+
+#aboutCon h2 {
+    margin-bottom: 30px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+#aboutCon p {
+    font-size: 22px;
+    font-weight: lighter;
+}
 
 @media screen and (min-width: 768px) {
     #main-logo {
