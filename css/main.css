@@ -10,7 +10,6 @@ body {
     font-family: 'Kanit', sans-serif;
 	font-size: 14px;
 	color: #000;
-	background-color: #ff3838;
 }
 
 a {
@@ -19,16 +18,12 @@ a {
 
 #container {
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
+	display: flex; flex-direction: column;
 	max-width: 100%;
-    background-color: #ffffff;
 }
 
 .quatro-can-1 {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+    object-fit: cover; width: 100%; height: auto;
 }
 
 
@@ -36,20 +31,17 @@ a {
 
 
 li, a {
-    font-size: 1.875rem;
-    text-decoration: none;
+    font-size: 1.875rem; text-decoration: none;
     color: rgb(255, 255, 255);
   }
   
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; top: 0;
-    padding: 18px 10%;
+  #mainNav-con {
+    position: sticky; top: 0; z-index: 34;
+  }
+  #main-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 5%;
     background-color: rgb(0, 0, 0);
-    z-index: 200;
   }
   
   #Logo {
@@ -83,15 +75,12 @@ li, a {
   }
   
   button {
+    color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+    border: none; border-radius: 30px;
+    font-family: 'Kanit', sans-serif; font-size: 14px;
     padding: 9px 20px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Kanit', sans-serif;
-    font-size: 14px;
   }
   
   button:hover {
@@ -100,27 +89,22 @@ li, a {
     color: #fff;
   }
 
-
-
   .quatro-can-1 {
     margin-bottom: 40px;
   }
 
-
 /* 2. --- card section --- */
 
 .cards {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
+    display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;
     width: 100%;
-    justify-content: center;
     margin: 0 auto 50px auto;
+    background-color: #ffffff;
+
 }
 
 #about-img, #contact-img{
-    width: 50%;
-    height: auto;
+    width: 50%; height: auto;
     padding: 20px 110px 40px 110px;
     transition: all ease .3s;
 }
@@ -139,8 +123,7 @@ li, a {
     font-size: 30px;
     text-align: center;
     color: #ffffff;
-    margin-top: 80px;
-    margin-bottom: 35px;
+    margin: 80px 0 35px 0;
 }
 
 .cards p {
@@ -207,7 +190,7 @@ video {
 }
 
 .page1-img1 {
-    display: block;
+    justify-content: center;
     width: 575px;
     height: 325px;
     margin: 50px 22px 22px 0px;
@@ -234,11 +217,7 @@ video {
     border-right: 30px solid #000;
 
 }
-.com1-text {
-    width: 100%;
-    justify-content: center;
-    margin: 0 auto;
-}
+ 
 
 .com1-text h3 {
     align-items: center;
@@ -251,14 +230,11 @@ video {
 }
 
 .com1-text p, .com2-text p {
-    position: relative;
+    justify-content: center;
     text-align: center;
-    width: 550px;
-    margin: 30px auto;
-    line-height: 1.2;
-    font-size: 20px;
-    color: #000000;
     font-weight: lighter;
+    font-size: 24px;
+    margin: 35px 20px 80px 20px;
 }
 
 .morebtn1, .morebtn2 {
@@ -275,18 +251,6 @@ video {
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     margin: 20px auto 15px;
-    /* display: block;
-    width: 150px;
-    color: #989898;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin: 40px auto;
-    margin-bottom: 40px;
-    border: 2px solid #000000;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    transition: all .2s ease-in-out; */
 }
 
 .morebtn2 {
@@ -338,10 +302,12 @@ video {
 
 }
 
-.com2-text {
-    width: 100%;
+.com2-text p {
     justify-content: center;
-    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 24px;
+    margin: 35px 20px 80px 20px;
 }
 
 .com2-text h3 {
@@ -370,6 +336,7 @@ video {
     margin: 50px auto 50px 0;
     background-color: #333;
 }
+
 
 .page1-banner h3 {
     padding: 80px 0 80px 0;
@@ -528,15 +495,7 @@ textarea {
 	resize: none;
 }
 
-#fname {
-    width: 370px;
-	margin-bottom: 18px;
-	font-size: 14px;		
-	border: 2px solid #000000;
-	padding: 20px 20px;
-}
-
-#email {
+#fname,#email {
     width: 370px;
 	margin-bottom: 18px;
 	font-size: 14px;		
@@ -552,15 +511,7 @@ textarea {
 	padding: 20px 20px;
     height: 50px;
 }
-#fname:hover {
-	border: 2px solid #999999;
-}
-
-#email:hover {
-	border: 2px solid #999999;
-}
-
-#order:hover {
+#fname:hover, #order:hover, #email:hover {
 	border: 2px solid #999999;
 }
 
@@ -630,12 +581,11 @@ textarea {
 }
 
 #googleMap {
-    display: flex;
     justify-content: center;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 120px;
-    width: 600px;
+    width: 440px;
     height: auto;
     border: 5px solid #000000;
     
@@ -652,13 +602,11 @@ textarea {
 
 
 .mapCon p{
-    display: flex;
     justify-content: center;
     text-align: center;
-    margin: 0 180px 0 180px;
-    font-size: 22px;
     font-weight: lighter;
-    margin-top: 35px;
+    font-size: 24px;
+    margin: 35px 20px 80px 20px;
     
 } 
 #contactPage {
@@ -813,55 +761,185 @@ textarea {
 #aboutCon p, .saleSec p {
     font-size: 22px;
     font-weight: lighter;
+    padding: 0 50px 0 50px;
 }
 
 .saleSec {
     text-align: center;
-  }
+}
   
-  .saleSec .heading_container {
+.saleSec .heading_container {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
+}
   
-  .saleSec .saleCon {
+.saleSec .saleCon {
     display: flex;
     justify-content: center;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
+}
   
-  .saleSec .saleCon .box {
-    margin: 35px 45px;
+.saleSec .saleCon .box {
+    margin:  45px;
     min-width: 200px;
     width: 250px;
-  }
+}
   
-  .saleSec .saleCon .box.b-2 {
+.saleSec .saleCon .box.b-2, .saleSec .saleCon .box.b-5{
     margin-top: 60px;
-  }
+}
   
-  .saleSec .saleCon .box.b-3 {
+.saleSec .saleCon .box.b-3, .saleSec .saleCon .box.b-6 {
     margin-top: 100px;
-  }
+}
+
+
 
 #packSec {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 #packSec p {
-    display: flex;
-    align-items: center;
-    font-size: 22px;
+    justify-content: center;
+    text-align: center;
     font-weight: lighter;
+    font-size: 24px;
+    margin: 55px 20px 80px 20px;
 }
 
-@media screen and (min-width: 768px) {
-    #main-logo {
-        order: -1;
-    }
+
+
+/* Media Query Section */
+
+
+@media screen and (max-width:1019px) {
+
     
+}
+
+/* this tag is IMPORTANT! */
+#mobileNav-con {
+    display: none;
+}
+/*     /\  /\  /\    */
+
+@media screen and (max-width:768px) {
+    
+#mobileNav-con {
+    display: block;
+    position: sticky; top: 0; z-index: 35;
+}
+
+#mainNav-con {
+     display: none;
+}
+
+#main-nav button {
+    width: 20px;
+    height: 20px;
+    background: url(../images/burger.svg) no-repeat center;
+    transition: all .3s ease;
+    border: 0;
+ }
+ 
+ #main-nav button.expanded {
+    transform: rotate(180deg) scale(1.4);
+    position: absolute;
+    z-index: 3;
+ }
+ 
+ #burger-con {
+    display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+    display: block;
+    height: 100vh;
+    width: 70vw;
+    background-color: #333333ca;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(4px 3px 3px #000000);}
+ }
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 80px 0 0 0;
+    text-align: center;
+ 
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #ffffff;
+ }
+ 
+ #main-nav ul li a:hover {
+    color: #a0a0a0;
+    filter: drop-shadow(0px 1px 3px #000000);
+ }
+ 
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ }
+
+ .page1-img2, .page1-img3 {
+    display: none;
+ }
+
+ .page1-img1 {
+    margin: 50px 0px 22px 0px;
+}
+
+.page1-img4 {
+    margin: 50px 0 0 00px;
+}
+
+ .page1-banner h3 {
+    padding: 60px 0px 60px 50px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    color: white;
+}
+
+.page1-banner h4 {
+    padding: 40px 50px 50px 10px;
+    margin-left: 10px;
+    letter-spacing: 6px;
+
+    color: white;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+#fname,#email, #order {
+    width: 220px;
+}
+
+.saleSec .saleCon .box.b-3, .saleSec .saleCon .box.b-2, .saleSec .saleCon .box.b-2 {
+    margin-top: 0;
+}
+
+.saleSec .saleCon .box.b-5, .saleSec .saleCon .box.b-6 {
+    margin-top: 30px;
+}
+
+
+
+
+
+@media screen and (max-width:620px) {
+    #contact-form {
+        display: none;
+    }
 }
