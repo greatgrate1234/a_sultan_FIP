@@ -1,0 +1,36 @@
+body {
+
+    min-height: 100vh;
+    display: flex;
+    background: black;
+}
+
+p {
+    font-family: 'Kanit', sans-serif; font-weight: 30; font-size: 22px;
+    color: white;
+    position: relative;
+    top: 35%;
+    margin-left: 190px;
+}
+
+.pa {
+    font-family: 'Kanit', sans-serif; font-weight: 700;
+    position: relative;
+    top: 30%; left: 100%;
+    color: white;
+    font-size: 5em;
+    content: "\e900";
+    text-shadow: 0 0 59px #34e, 
+                    0 0 59px #34e,
+                    0 0 119px #34e;
+                    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% 
+    {filter: hue-rotate(0);}
+    50%
+    {filter: hue-rotate(100deg);}
+    100%
+    {filter: hue-rotate(0);}
+}
