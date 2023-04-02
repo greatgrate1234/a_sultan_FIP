@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <title>Quatro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+    
+            <h1 class="hidden">Welcome to The Couples Resort</h1>
+            <div id="mobileNav-con">
+                <header class="grid-con" id="main-header">
+                    <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                        <h2 class="hidden">Main Navigation</h2>
+                       
+                        <button id="button"></button>
+                        <div id="burger-con">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="404.html">New</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <a href="index.html"><img src="images/logo-white.svg" alt="Quatro" id="Logo"></a>
+                </header>
+            </div>
+    <div id="mainNav-con">
+    <header id="main-header">
+    
+        <h1 class="hidden">Header</h1>
+        
+        <a href="index.html"><img src="images/logo-white.svg" alt="Quatro" id="Logo"></a>
+    
+        <nav id="mainNav">
+            <h2 class="hidden">Main Navigation</h2>
+    
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="404.html">New</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="404.html"><button>Order Now!</button></a>
+    
+    </header>
+    </div>
+    <section class="pageCon">
+        
+        <div class="box">
+            <i class="pa" aria-hidden="true"> 404</i>        
+        </div>
+        <div class="text"><p>Sorry, page not found</p></div>
+
+    </section>
+
+
+        <footer id="footer">
+            <h2 class="hidden">Footer</h2>
+                <section>
+                    <a href="index.html">
+                        <img src="images/logo-white.svg" alt=" Quatro Logo" id="footerLogo">
+                    </a>
+                    <h3>THE NEXT BIG THING</h3>
+                    <p>
+                        100 Kellogg Ln, London, ON N5W 0B4<br>
+                        CONTACT@QUATRO.COM<br>
+                        TEL: (519) 100-5555<br>
+                    </p>
+                    <nav id="social">
+                    <h3 class="hidden">Social Media Icons</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" id="instagram">I</a></li>
+                            <li><a href="https://twitter.com/" id="twitter">T</a></li>
+                            <li><a href="https://www.facebook.com/" id="facebook">F</a></li>
+                        </ul>
+                    </nav>
+                </section>
+    
+                <section id="contact-form">
+                    <form action="form.php" method="post">
+                        <h2> Pre-order Now!</h2>
+                        <ul>
+                            <li>
+                                <input type="text" required id="fname" name="fullName" placeholder="Full Name">
+                            </li>
+    
+    
+                            <li>
+                                <input type="email" required id="email" placeholder="Email Address">
+                            </li>
+    
+    
+                            <li>
+                                <textarea id="order" required placeholder="Order"></textarea><br>
+                                <input type="submit" value="Place Order" id="submitBtn">
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+                <h3 class="hidden">Footer Navigation</h3>
+                </nav>
+            </footer>
+            
+            <section id="copyright">
+                <h2>Copyright &copy; 2023 - Quatro</h2>
+            </section>
+            
+            </div>
+        <script src="js/main.js"></script>
+    
+    </body>
+    </html>
