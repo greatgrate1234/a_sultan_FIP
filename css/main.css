@@ -36,17 +36,18 @@ li, a {
     color: rgb(255, 255, 255);
 }
   
-#mainNav-con {
+#Nav-con, #mainNav-con {
     position: sticky; top: 0; z-index: 34;
 }
 
-#main-header {
+#main-header1, #main-header2 {
     display: flex; justify-content: space-between; align-items: center;
     padding: 18px 5%;
     background-color: rgb(0, 0, 0);
 }
+ 
   
-#Logo {
+#Logo, #Logo2 {
     cursor: pointer;
     height: 35px;
     transition: all 0.2s ease;
@@ -77,8 +78,7 @@ li, a {
     color: rgb(90, 90, 90);
 }
   
-button {
-    width: 130px;
+button, .cta {
     color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
     border: none; border-radius: 30px;
     font-family: 'Raleway', sans-serif; font-size: 14px; font-weight:bold;
@@ -177,6 +177,9 @@ button:hover {
     justify-content: center;
 }
 
+video:hover {
+    cursor: pointer;
+}
 video {
     border: 4px solid rgb(255, 255, 255);
     width: 70%; height: auto;
@@ -239,7 +242,7 @@ video {
     text-align: center;
     font-weight: lighter;
     font-size: 24px;
-    margin: 25px 20px 50px 20px;
+    margin: 25px 110px 50px 110px;
 }
 
 .morebtn1, .ctbtn {
@@ -303,14 +306,6 @@ video {
     border: 7px solid #000000;
     border-right: 30px solid #000;
 
-}
-
-.com2-text p {
-    justify-content: center;
-    text-align: center;
-    font-weight: lighter;
-    font-size: 24px;
-    margin: 25px 20px 50px 20px;
 }
 
 .com2-text h3 {
@@ -409,7 +404,7 @@ footer h3 {
 
 #social {
     position: relative;
-    margin: 84px auto 100px auto;
+    margin: 76px auto 100px auto;
     left: 18%;
 }
 
@@ -586,14 +581,18 @@ textarea {
     padding-bottom: 70px;
 }
 
+#aboutCon {
+    text-align: center;
+}
+
 .aboutText h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
 }
 
-#aboutCon {
-    text-align: center;
+#aboutCon p {
+    padding: 0 110px 0 110px;
 }
 
 
@@ -603,7 +602,11 @@ textarea {
     display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;
  }
 
- #canDiv, #canDiv2{
+ #canGroup1, #canGroup2 {
+    display: flex; flex-direction: row; justify-content: center;
+ }
+
+ #canDiv, #canDiv2, #canDiv3, #canDiv4{
     display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;
 }
 
@@ -614,12 +617,13 @@ textarea {
     cursor: pointer;
 }
 
-.grid-can #canDiv img:hover {
-    transform: scale(1.3) rotate(-7deg);
+.grid-can #canDiv img:hover, .grid-can #canDiv3 img:hover {
+    transform: scale(1.4) rotate(-4deg);
 }
 
-.grid-can #canDiv2 img:hover {
-    transform: scale(1.3) rotate(7deg);
+.grid-can #canDiv2 img:hover, .grid-can #canDiv4 img:hover {
+    transform: scale(1.4) rotate(4deg);
+    
 }
 
 /*x  OVERLAY & buttons  x*/
@@ -631,7 +635,6 @@ textarea {
     background: #ffffff; border: 5px solid black;
     width: 85%; height: 85%;
     top: 0; left: 0; bottom: 0; right: 0;
-
     z-index: 1000;   
     display: none;
   }
@@ -671,7 +674,6 @@ textarea {
 #aboutCon p, .saleSec p {
     font-size: 22px;
     font-weight: lighter;
-    padding: 0 50px 0 50px;
 }
 
 .saleSec {
@@ -713,9 +715,7 @@ textarea {
     margin-top: 50px;
 }
 
-.packSec .heading_container2 p {
-    margin: -50px;
-}
+ 
 .package, .package a {
     display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;
     margin-top: 25px;
@@ -725,7 +725,7 @@ textarea {
     justify-content: center; text-align: center;
     font-weight: lighter;
     font-size: 24px;
-    padding: 55px 80px 80px 80px;
+    padding: 0 80px 40px 80px;
 }
  
 
@@ -819,7 +819,7 @@ textarea {
     text-align: center;
     font-weight: lighter;
     font-size: 24px;
-    margin: 35px 40px 80px 40px;
+    margin: 35px 110px 80px 110px;
     
 } 
 
@@ -980,14 +980,7 @@ textarea {
 
 
 /* Media Query Section */
-@media screen and (max-width:1019px) {
-
-    .com2-text p {
-
-        margin: 35px 20px 80px 20px;
-    }
-    
-}
+ 
 
 
 @media screen and (max-width:840px) {
@@ -1058,7 +1051,6 @@ textarea {
     
     #main-nav ul li a:hover {
         color: #a0a0a0;
-        filter: drop-shadow(0px 1px 3px #000000);
     }
     
     
@@ -1113,7 +1105,27 @@ textarea {
     video {
         width: 80vw; height: auto;
     }
+
+    #aboutCon p {
+        padding: 0 20px 0 20px;
     }
+    .packSec p {
+        padding: 30px 20px 60px 20px;
+    }
+
+    .mapCon p{
+        margin: 35px 20px 80px 20px;
+    } 
+
+    .com2-text p, .com1-text p {
+        margin: 30px 20px 30px 20px;
+    }
+
+    #canGroup1 {
+        padding-bottom: 30px ;
+    }
+    
+}
 
     /* Hide footer form */
     @media screen and (max-width:620px) {
