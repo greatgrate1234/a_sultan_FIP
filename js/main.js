@@ -30,10 +30,9 @@ let greenButton = document.querySelector('#greenButton');
 	let closeButton3 = document.querySelector('#closeBtn3');
     let closeButton4 = document.querySelector('#closeBtn4');
 
-
-    greenButton.addEventListener('click', openOverlay);
+	pinkButton.addEventListener('click', openOverlay);
     blackButton.addEventListener('click', openOverlay2);
-	pinkButton.addEventListener('click', openOverlay3);
+    greenButton.addEventListener('click', openOverlay3);
     orangeButton.addEventListener('click', openOverlay4);
 
     closeButton.addEventListener('click', closeOverlay);
@@ -83,6 +82,8 @@ let greenButton = document.querySelector('#greenButton');
 
 
 
+
+   
 
     /* lightbox */
 
