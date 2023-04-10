@@ -1,23 +1,23 @@
 # QUATRO JUICE
 Quatro Rebrand FIP assignment 
 
-#Introduction
+# Introduction
 
 This is the repository for my final project. The project is to rebrand Quatro drink and create a 3 page responsive website. Quatro was a canned, fruit-flavoured carbonated drink produced from 1982 to 1989 in the United Kingdom. From 1983 to 1989 it was commonly available in the UK, though production and sale of the drink ceased there in the mid-1980s.
 
-#Language 
+# Language 
 
 Languages used are HTML, CSS, and JavaScript
 
-#Credit
+# Credit
 
 Abdullah Sultan
 
-#Acknowledgements
+# Acknowledgements
 
 Inspired by the original Quatro drink 
 
-#License
+# License
 
 MIT License
 
