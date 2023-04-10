@@ -1,21 +1,54 @@
-# QUATRO JUICE
+# Final Integrated Project
+
 Quatro Rebrand FIP assignment 
 
+
+# Table of Contents
+    Introduction
+    Installation
+    Usage
+    Contributing
+    License
+    
+    
 # Introduction
 
 This is the repository for my final project. The project is to rebrand Quatro drink and create a 3 page responsive website. Quatro was a canned, fruit-flavoured carbonated drink produced from 1982 to 1989 in the United Kingdom. From 1983 to 1989 it was commonly available in the UK, though production and sale of the drink ceased there in the mid-1980s.
+
+
+# Installation
+
+Install this project by cloning the repository and running the following command:
+
+    npm install
+
+
+# Usage
+
+To use this project, run the following command:
+
+    npm start
+    
+    
+# Contributing
+
+Contributions are always welcome! Please create a pull request with your proposed changes.
+
 
 # Language 
 
 Languages used are HTML, CSS, and JavaScript
 
+
 # Credit
 
 Abdullah Sultan
 
+
 # Acknowledgements
 
 Inspired by the original Quatro drink 
+
 
 # License
 
