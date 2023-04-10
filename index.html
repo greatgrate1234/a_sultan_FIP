@@ -13,6 +13,9 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    
     <div id="container">
 
         <h2 class="hidden">Welcome to The Couples Resort</h2>
@@ -104,7 +107,7 @@
         <h2 class="hidden">Video</h2>
 
                 <div id="video">
-                <video controls src="video/Cinemagraph-Video.mp4"></video>
+                <video controls src="video/Quatro-infomercial.mp4"></video>
                 </div>
         </section>
 
@@ -213,6 +216,14 @@
         
         </div>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+         let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight = "%";
+    }
+    </script>
 
 </body>
 </html>
